@@ -1,0 +1,43 @@
+name: runner
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.6 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # routing
+  go_router:
+    ^10.0.0
+
+    # UI
+  cupertino_icons: ^1.0.2
+  flutter_tabler_icons: ^1.2.0
+  flutter_svg: ^2.0.7
+
+    # Dev
+  l: 4.0.2
+  logger: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints:
+    ^2.0.0
+
+    # Code generation
+  freezed_annotation: 2.4.1
+  json_annotation: 4.8.1
+  json_serializable: 6.7.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
