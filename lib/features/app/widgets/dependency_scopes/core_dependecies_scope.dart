@@ -13,7 +13,33 @@ class CoreDependenciesScope extends StatelessWidget {
   Widget build(BuildContext context) {
     return RepositoryProvider<SharedPreferences>.value(
       value: sharedPreferences,
-      child: child,
+      // child: RepoDependenciesScope(
+      //     child: BlocScope(
+        child: child,
+      // )),
     );
   }
 }
+
+// class RepoDependenciesScope extends StatelessWidget {
+//   const RepoDependenciesScope({super.key, required this.child});
+//   final Widget child;
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return BlocProvider(
+//       create: (context) => RepoDependencies(),
+//       child: child,
+//     );
+//   }
+// }
+
+// class BlocScope extends StatelessWidget {
+//   const BlocScope({super.key, required this.child});
+//   final Widget child;
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return BlocProvider(create: create, child: child);
+//   }
+// }

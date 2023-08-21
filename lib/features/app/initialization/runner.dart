@@ -17,8 +17,6 @@ class Runner {
   }
 
   static Future<Widget> _appRunner() async {
-    
-
     // setPathUrlStrategy();
 
     final sharedPreferences = await SharedPreferences.getInstance();
