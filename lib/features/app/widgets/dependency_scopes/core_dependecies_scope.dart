@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:runner/features/shop/bloc/navigatorBloc/navigator_bloc.dart';
+import 'package:runner/features/shop/bloc/themeBloc/theme_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class CoreDependenciesScope extends StatelessWidget {
@@ -42,7 +43,9 @@ class BlocScope extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiRepositoryProvider(
-        providers: [BlocProvider(create: (_) => NavigatorBloc())],
+        providers: [
+          BlocProvider(create: (_) => NavigatorBloc()),
+          BlocProvider(create: (_) => ThemeBloc())],
         child: child);
   }
 }

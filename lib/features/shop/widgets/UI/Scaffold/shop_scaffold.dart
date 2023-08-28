@@ -69,7 +69,14 @@ class ShopScaffold extends StatelessWidget {
                     ? const Icon(Icons.sunny)
                     : const Icon(Icons.nightlight_outlined , color: Colors.black,),                  
                 ),
-                trailing: Text('тогл языка'),
+                trailing: 
+                DropdownButton(items: [
+                  DropdownMenuItem(child: const Text('English'),
+                  value: 1),
+                ], onChanged: (int? value) {  },)
+                
+                
+                ,
               ),
               ListTile(
                 title: const Text('Каталог'),
