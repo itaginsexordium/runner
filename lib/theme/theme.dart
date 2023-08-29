@@ -8,7 +8,7 @@ ThemeData basicTheme() => ThemeData(
       secondaryHeaderColor: kSecondaryColor,
       scaffoldBackgroundColor: kBackgroundColor,
       useMaterial3: true,
-      
+      fontFamily: 'gugi-cyrillic',
       //cardTheme
       cardTheme: CardTheme(
           clipBehavior: Clip.antiAliasWithSaveLayer,

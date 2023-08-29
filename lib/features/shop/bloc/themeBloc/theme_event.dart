@@ -6,9 +6,9 @@ sealed class ThemeEvent extends Equatable {
 }
 
 final class ChangeTheme extends ThemeEvent {
-  const ChangeTheme(this.index);
+  const ChangeTheme(this.state);
 
-  final int index;
+  final ThemeState state;
   @override
-  List<Object?> get props => [index];
+  List<Object?> get props => [state];
 }

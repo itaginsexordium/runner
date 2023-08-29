@@ -12,7 +12,9 @@ class ShopPage extends StatelessWidget {
   Widget build(BuildContext context) {
     context.read<NavigatorBloc>().add(AppStarted());
     return ShopScaffold(
-      child: Center(child: Text(context.read<ThemeBloc>().state.toString())),
+      child: BlocBuilder<NavigatorBloc, NavigatorMainState>(builder: (context, state) {
+        return Center(child: Text(state.toString()));
+      }),
     );
   }
 }
