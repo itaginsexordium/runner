@@ -11,7 +11,7 @@ class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {
   }
 
   Future<void> _changeTheme(ChangeTheme event, Emitter<ThemeState> emit) async {
-    switch (event.state) {
+    switch (state) {
       case DarkTheme():
         emit(LightTheme());
         break;

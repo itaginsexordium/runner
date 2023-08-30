@@ -5,8 +5,10 @@ import './constants.dart';
 ThemeData basicTheme() => ThemeData(
       brightness: Brightness.dark,
       primaryColor: kSecondaryColor,
-      secondaryHeaderColor: kSecondaryColor,
+      secondaryHeaderColor: kAccentColor,
       scaffoldBackgroundColor: kBackgroundColor,
+      
+    
       useMaterial3: true,
       fontFamily: 'gugi-cyrillic',
       //cardTheme

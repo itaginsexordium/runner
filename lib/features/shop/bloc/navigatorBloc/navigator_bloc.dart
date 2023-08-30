@@ -12,7 +12,7 @@ class NavigatorBloc extends Bloc<NavigatorEvent, NavigatorMainState> {
   }
   Future<void> _appStarted(
       AppStarted event, Emitter<NavigatorMainState> emit) async {
-    emit(NavigatorHome());
+    emit(NavigatorCatalog());
   }
 
   Future<void> _changePage(
